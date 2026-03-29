@@ -1,2 +1,7 @@
-TOKEN = "8620035410:AAHmjJcFnF3g_6O4TOhL7N8w9ELvBv5kHyU"
-ADMIN_ID = "771021789"
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+TOKEN = os.getenv("TOKEN")
+ADMIN_ID = int(os.getenv("ADMIN_ID"))
